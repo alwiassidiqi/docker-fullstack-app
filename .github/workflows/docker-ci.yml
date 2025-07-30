@@ -17,10 +17,10 @@ jobs:
 
       - name: Build and run Docker Compose
         run: |
-          docker compose up -d --build
+          docker-compose up -d --build
 
       - name: Wait for containers
         run: sleep 10
 
       - name: Check container logs
-        run: docker compose logs
+        run: docker-compose logs
